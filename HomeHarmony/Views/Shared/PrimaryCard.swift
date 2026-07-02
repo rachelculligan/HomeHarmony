@@ -19,7 +19,8 @@ struct PrimaryCard<Content: View>: View {
             content
 
         }
-        .padding(20)
+        .cornerRadius(HomeHarmonyStyle.mediumRadius)
+        .padding(HomeHarmonyStyle.mediumPadding)
         .frame(maxWidth: .infinity)
         .background(
             RoundedRectangle(

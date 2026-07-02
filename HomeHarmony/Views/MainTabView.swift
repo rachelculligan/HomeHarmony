@@ -22,6 +22,11 @@ struct MainTabView: View {
                     )
                 }
 
+            MealsHomeView()
+                .tabItem {
+                    Label("Meals", systemImage: "fork.knife")
+                }
+
             CalendarView()
                 .tabItem {
 

@@ -24,7 +24,16 @@ struct RewardService {
         }
 
         member.points += amount
+        member.lifetimePoints += amount
+        member.tasksCompleted += 1
+        member.experience += amount
+        
+        while member.experience >= member.experienceNeeded {
 
+            member.experience -= member.experienceNeeded
+            member.level += 1
+        }
+        
         try? context.save()
     }
 

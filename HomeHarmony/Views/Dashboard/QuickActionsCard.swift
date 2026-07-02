@@ -74,6 +74,18 @@ struct QuickActionsCard: View {
                         color: .blue
                     )
                 }
+                NavigationLink {
+
+                    LeaderboardView()
+
+                } label: {
+
+                    ActionButtonLabel(
+                        title: "Leaderboard",
+                        icon: "trophy.fill",
+                        color: .yellow
+                    )
+                }
             }
         }
     }

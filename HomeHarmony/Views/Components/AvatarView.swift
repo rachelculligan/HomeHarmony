@@ -9,27 +9,53 @@ import SwiftUI
 
 struct AvatarView: View {
 
-    let name: String
-    let color: Color
+    let member: HouseholdMember
+    var size: CGFloat = 52
 
     var body: some View {
 
-        Circle()
-            .fill(color.gradient)
-            .frame(width: 70, height: 70)
-            .overlay {
+        ZStack {
 
-                Text(String(name.prefix(1)))
-                    .font(.title.bold())
-                    .foregroundStyle(.white)
+            Circle()
+                .fill(color)
+                .frame(width: size, height: size)
 
-            }
-            .overlay {
-
-                Circle()
-                    .stroke(.white, lineWidth: 3)
-
-            }
-            .shadow(radius: 5)
+            Image(systemName: member.avatar)
+                .foregroundStyle(.white)
+                .font(.system(size: size * 0.4))
+        }
     }
+
+    private var color: Color {
+
+        switch member.color.lowercased() {
+
+        case "red":
+            return .red
+
+        case "green":
+            return .green
+
+        case "orange":
+            return .orange
+
+        case "purple":
+            return .purple
+
+        case "pink":
+            return .pink
+
+        default:
+            return HomeHarmonyTheme.primary
+        }
+    }
+}
+
+#Preview {
+
+    AvatarView(
+        member: HouseholdMember(
+            name: "Rachel"
+        )
+    )
 }
