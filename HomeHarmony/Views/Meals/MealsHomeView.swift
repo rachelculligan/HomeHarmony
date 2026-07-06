@@ -48,14 +48,14 @@ struct MealsHomeView: View {
                         title: "Grocery List",
                         subtitle: "Automatically generated",
                         icon: "cart.fill",
-                        destination: Text("Coming Soon")
+                        destination: GroceryListView()
                     )
 
                     MealFeatureCard(
                         title: "Pantry",
                         subtitle: "Track what you have",
                         icon: "cabinet.fill",
-                        destination: Text("Coming Soon")
+                        destination: GroceryListView()
                     )
                 }
                 .padding()

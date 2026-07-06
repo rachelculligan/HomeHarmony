@@ -27,7 +27,11 @@ struct HomeHarmonyApp: App {
             Reward.self,
             RewardRedemption.self,
             FamilyChallenge.self,
-            Achievement.self
+            Achievement.self,
+
+            Recipe.self,
+            Ingredient.self,
+            MealPlan.self
         ])
     }
 }

@@ -30,6 +30,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BF36FF892FFBDBE2002E511C /* Exceptions for "Documentation" folder in "HomeHarmony" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				DESIGN.md,
+			);
+			target = BF4743342FE1929200FBA061 /* HomeHarmony */;
+		};
 		BF4743582FE1929400FBA061 /* Exceptions for "HomeHarmony" folder in "HomeHarmony" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -40,6 +47,14 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		BF36FF832FFBDBE1002E511C /* Documentation */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BF36FF892FFBDBE2002E511C /* Exceptions for "Documentation" folder in "HomeHarmony" target */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
 		BF4743372FE1929200FBA061 /* HomeHarmony */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -92,6 +107,7 @@
 				BF4743492FE1929400FBA061 /* HomeHarmonyTests */,
 				BF4743532FE1929400FBA061 /* HomeHarmonyUITests */,
 				BF4743362FE1929200FBA061 /* Products */,
+				BF36FF832FFBDBE1002E511C /* Documentation */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +137,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				BF36FF832FFBDBE1002E511C /* Documentation */,
 				BF4743372FE1929200FBA061 /* HomeHarmony */,
 			);
 			name = HomeHarmony;
